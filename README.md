@@ -15,6 +15,7 @@ To install the XLT Script Developer extension for Firefox, you need to:
 4. Click Install to finish and restart your Firefox browser.
 4.1. Alternatively, you can drag the .xpi file onto the Firefox window.
 
+
 ---Setup---
 
 1. Open the Script Developer window via the Firefox Tools menu.
