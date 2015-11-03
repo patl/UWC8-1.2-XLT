@@ -9,11 +9,11 @@ Download and install this tool from here: https://www.xceptance.com/en/xlt/downl
 ---Installation---
 
 To install the XLT Script Developer extension for Firefox, you need to:
-1.	Start Firefox
-2.	Click File>Open File…
-3.	Navigate to the <XLT>/tools directory and select the .xpi file. The add-on installation dialog box appears.
-4.	Click Install to finish and restart your Firefox browser
-4.1.	Alternatively, you can drag the .xpi file onto the Firefox window
+1. Start Firefox.
+2. Click File>Open File.
+3. Navigate to the <XLT>/tools directory and select the .xpi file. The add-on installation dialog box appears.
+4. Click Install to finish and restart your Firefox browser.
+4.1. Alternatively, you can drag the .xpi file onto the Firefox window.
 
 ---Setup---
 
