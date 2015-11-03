@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Open Site, Clean and create cookies</codecomment>
+  <command name="open" value="${SiteName}"/>
+  <command name="pause" value="2000"/>
+  <command name="deleteAllVisibleCookies">
+    <comment>Cleans all cookies in the current domain context.</comment>
+  </command>
+  <command name="createCookie" target="IPE119492=IPE119492"/>
+  <command name="open" value="${SiteName}"/>
+</scriptmodule>

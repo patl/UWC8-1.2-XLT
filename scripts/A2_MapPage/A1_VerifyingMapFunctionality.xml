@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <module name="Modules.OpenHP"/>
+  <codecomment>Verifying Link and navigates to MAP page</codecomment>
+  <command name="assertElementPresent" target="link=на мапі"/>
+  <command name="click" target="link=на мапі"/>
+  <command name="assertElementPresent" target="xpath=/html/body[1]/header[1]"/>
+  <command name="click" target="document.forms[0].elements[0]"/>
+  <module name="Modules.ClickingOnMap"/>
+  <codecomment>Verifying that we have 3 routes(Red, Green, Yellow)</codecomment>
+  <command name="assertElementPresent" target="//*[@id='sections']//div[contains(@class,'route-block') and contains(@class,'route-block-red')]"/>
+  <command name="assertElementPresent" target="//*[@id='sections']//div[contains(@class,'route-block') and contains(@class,'route-block-green')]"/>
+  <command name="assertElementPresent" target="//*[@id='sections']//div[contains(@class,'route-block') and contains(@class,'route-block-yellow')]"/>
+</testcase>

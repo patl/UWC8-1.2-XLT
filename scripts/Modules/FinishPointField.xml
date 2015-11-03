@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Verifying that field existing on the page</codecomment>
+  <command name="assertElementPresent" target="document.forms[0].elements[1]"/>
+  <codecomment>Typing invalid value -&gt;should be validation message</codecomment>
+  <command name="type" target="document.forms[0].elements[1]" value="asd"/>
+  <codecomment>Typing valid value</codecomment>
+  <command name="type" target="document.forms[0].elements[1]" value="Арт"/>
+  <command name="pause" value="1000"/>
+  <codecomment>Selecting value from the drop-down list</codecomment>
+</scriptmodule>

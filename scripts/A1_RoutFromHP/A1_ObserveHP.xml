@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <module name="Modules.OpenHP"/>
+  <codecomment>Verifying content on the page</codecomment>
+  <command name="assertText" target="//*[@id='application']//section[contains(@class,'main-content')][1]" value=" Кожного року кількість ДТП в Києві збільшується. За 2015 рік 116 людей загинуло, 1862 постраждало.*"/>
+  <command name="assertText" target="//*[@id='application']//h1[contains(@class,'main-content__header')][1]" value="Оберіть безпечний маршрут"/>
+  <command name="assertText" target="//*[@id='application']//p[contains(@class,'link-article')][1]" value="або прокладіть маршрут*"/>
+  <command name="assertElementPresent" target="link=на мапі"/>
+  <module name="Modules.StartPointField"/>
+  <command name="click" target="//ul[@id='ui-id-1']/li[1]"/>
+  <codecomment>Saving obtained value in variable</codecomment>
+  <command name="storeText" target="document.forms[0].elements[0]" value="AddressStartPoint"/>
+  <codecomment>Clicking on the button and verifying that button in unclickable(user still on HP)</codecomment>
+  <command name="click" target="//button[@type='submit']"/>
+  <command name="assertTextPresent" value="Оберіть безпечний маршрут"/>
+  <module name="Modules.FinishPointField"/>
+  <command name="click" target="//ul[@id='ui-id-2']/li[1]"/>
+  <codecomment>Saving obtained value in variable</codecomment>
+  <command name="storeText" target="document.forms[0].elements[1]" value="AddressFinishPoint"/>
+  <codecomment>Clicking on the button and verifying that button in clickable and user redirects to Map page</codecomment>
+  <command name="click" target="//button[@type='submit']"/>
+  <codecomment>Checking that addresses are the same as were selected on HP.</codecomment>
+  <command name="assertText" target="//ul[@id='addresses']/li[1]/span[2]" value="${AddressStartPoint}"/>
+  <command name="assertText" target="//ul[@id='addresses']/li[2]/span[2]" value="${AddressFinishPoint}"/>
+  <command name="assertElementPresent" target="//div[@id='sections']/section[1]/div/div[1]/div[3]/h2"/>
+  <command name="assertElementPresent" target="xpath=/html/body[1]/header[1]"/>
+  <command name="click" target="//ul[@id='addresses']/li[2]/span[2]"/>
+</testcase>

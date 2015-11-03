@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <codecomment>Clicking with right button on cart coordinates(all time different address)</codecomment>
+  <command name="contextMenuAt" target="//div[@id='map']/div/div[1]/div[2]" value="543,734"/>
+  <codecomment>Clicking on the butto Start Point</codecomment>
+  <command name="click" target="//*[@id='map']//div[contains(@class,'menu_item')][1]"/>
+  <codecomment>Clicking with right button on cart coordinates(all time different address)</codecomment>
+  <command name="contextMenuAt" target="//div[@id='map']/div/div[1]/div[2]" value="734,567"/>
+  <codecomment>Clicking on the butto Finish Point</codecomment>
+  <command name="click" target="//*[@id='map']//div[contains(@class,'menu_item')][2]"/>
+</scriptmodule>
